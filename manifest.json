@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Cat-ify Images",
+  "version": "1.0.0",
+  "description": "Replaces every image on the current webpage with a random cat image.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://cataas.com/*"],
+  "action": {
+    "default_title": "Click to replace all images on this page with cats"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
